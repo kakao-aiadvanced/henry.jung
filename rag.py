@@ -78,13 +78,13 @@ unique_docs = retriever_from_llm.invoke(question)
 # len(unique_docs)
 
 ### Prompt
-template = '''Answer the question based only on the following context:
-{context}
-
-Question: {question}
-'''
-
-prompt = ChatPromptTemplate.from_template(template)
+# template = '''Answer the question based only on the following context:
+# {context}
+#
+# Question: {question}
+# '''
+#
+# prompt = ChatPromptTemplate.from_template(template)
 
 ### Chain
 chain = (
