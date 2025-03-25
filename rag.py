@@ -71,9 +71,9 @@ retriever_from_llm = MultiQueryRetriever.from_llm(
     retriever=retriever, llm=llm
 )
 
-### 여기서 invoke를 할 때 주의할점이 retriever llm을 통해서 하므로 query도 만들어서 실행됨. 그러니까 retriever을 해서 그
-### 문서 기준으로 이제 내가 실행할 query를 생성하는게 아니라, retriever을 하기위한 query를 생성하고 그 query를 실행해서
-### retriever을 함.
+### 여기서 invoke를 할 때 주의할점이 retriever llm을 통해서 하므로 query도 만들어서 실행됨. 그러니까 retrieve을 해서 그
+### 문서 기준으로 이제 내가 실행할 query를 생성하는게 아니라, retrieve을 하기위한 query를 생성하고 그 query를 실행해서
+### retrieve을 함.
 unique_docs = retriever_from_llm.invoke(question)
 # len(unique_docs)
 
